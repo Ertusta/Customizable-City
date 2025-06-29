@@ -119,7 +119,7 @@ public class Builder : MonoBehaviour
                 {
                     Vector3 position = new Vector3(coord.x, i * 12f, coord.y);
                     GameObject floorPrefab = floorPrefabs[rand.Next(floorPrefabs.Count)];
-                    GameObject clone = Instantiate(floorPrefab, position, Quaternion.identity);
+                    GameObject clone = Instantiate(floorPrefab, position, Quaternion.Euler(90, 90, 90));
                     clone.transform.parent = buildingsParent;
                 }
             }
