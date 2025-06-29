@@ -380,15 +380,26 @@ MonoBehaviour:
   xlength: 400
   zlength: 400
   nodeCount: 25
-  maxFloor: 5
+  maxFloor: 10
   targetMaterial: {fileID: 2100000, guid: c6b94b952e067714f807fc7aeb7cbbc0, type: 2}
-  tilingX: 1
-  tilingY: 1
+  windowX: 1
+  windowY: 1
   strightRoad: {fileID: 6561087321825499495, guid: 5a15a204aeab9d642998b20d74c71680, type: 3}
   curveRoad: {fileID: 7161250039741156225, guid: 6a0409da4f6a59c41a8176d26d3cf462, type: 3}
   fourWayRoad: {fileID: 1200984582984714241, guid: 6aebcfa15b2cdfd47897e0e04cbcc0a4, type: 3}
   tRoad: {fileID: 2622545197740983620, guid: 1c8a49c5d854c0c4db10737d8525335b, type: 3}
-  floors: {fileID: 4578257845280410836, guid: 5558dca51e3777548a321734ff2c6f59, type: 3}
+  floorPrefabs:
+  - {fileID: 3878991968471436281, guid: 85b0858e3b3f3704787ec7e9d78332c0, type: 3}
+  - {fileID: 569884478291853506, guid: 9e7a04fd5497c9541824d8d6d46ecc92, type: 3}
+  - {fileID: 4767142376839829154, guid: 87ac109aa11532543b078859dc9455f0, type: 3}
+  - {fileID: 6199887359494753917, guid: 2dc11f781cf0099489979957554681cb, type: 3}
+  - {fileID: 34447602659576487, guid: dd7cdd7e6eb3f9f47b858c218f6140c9, type: 3}
+  - {fileID: 6257675344262699256, guid: 95317daac72da8c4ba725a56db2256a4, type: 3}
+  - {fileID: 5770426100924282196, guid: 74406a8028558e645be6ea003d35dbb1, type: 3}
+  - {fileID: 5956643439281303952, guid: c7eba19463ca235429a7abe86b2ff84f, type: 3}
+  - {fileID: 4451949452538550489, guid: 490e0a8aaac091543af362488bd33760, type: 3}
+  - {fileID: 609952093252994186, guid: cb21e9f1b776819428ab130a6445753a, type: 3}
+  - {fileID: 3030672453757567045, guid: a2d4b27a4e2e0294da2510bf312c6659, type: 3}
   buildingsParent: {fileID: 8416230534410237918}
 --- !u!1 &410087039
 GameObject:
@@ -415,7 +426,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}

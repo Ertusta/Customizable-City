@@ -32,7 +32,7 @@ public class Builder : MonoBehaviour
     public GameObject curveRoad;
     public GameObject fourWayRoad;
     public GameObject tRoad;
-    public GameObject floors;
+    public List<GameObject> floorPrefabs;
 
     float timer = 0f;
     float checkInterval = 1f;
@@ -118,7 +118,8 @@ public class Builder : MonoBehaviour
                 for (int i = 0; i < floorCount; i++)
                 {
                     Vector3 position = new Vector3(coord.x, i * 12f, coord.y);
-                    GameObject clone = Instantiate(floors, position, Quaternion.identity);
+                    GameObject floorPrefab = floorPrefabs[rand.Next(floorPrefabs.Count)];
+                    GameObject clone = Instantiate(floorPrefab, position, Quaternion.identity);
                     clone.transform.parent = buildingsParent;
                 }
             }
